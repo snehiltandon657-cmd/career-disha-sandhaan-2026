@@ -1,0 +1,190 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:linear-gradient(135deg,#071426,#16213e,#3b0764);
+min-height:100vh;
+color:white;
+overflow-x:hidden;
+}
+
+/* HEADER */
+
+header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 8%;
+background:rgba(255,255,255,.08);
+backdrop-filter:blur(15px);
+position:sticky;
+top:0;
+z-index:100;
+}
+
+.logo h2{
+font-size:28px;
+font-weight:700;
+}
+
+.logo p{
+opacity:.8;
+}
+
+nav a{
+text-decoration:none;
+color:white;
+margin-left:30px;
+font-weight:500;
+transition:.3s;
+}
+
+nav a:hover{
+color:#64b5ff;
+}
+
+/* HERO */
+
+.hero{
+height:90vh;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:40px;
+}
+
+.overlay{
+background:rgba(255,255,255,.08);
+padding:60px;
+border-radius:25px;
+backdrop-filter:blur(20px);
+box-shadow:0 20px 60px rgba(0,0,0,.4);
+max-width:900px;
+animation:fadeUp 1s;
+}
+
+.hero h1{
+font-size:60px;
+margin-bottom:20px;
+}
+
+.hero h3{
+font-size:28px;
+margin-bottom:25px;
+font-weight:400;
+}
+
+.hero p{
+font-size:18px;
+line-height:1.8;
+opacity:.9;
+}
+
+button{
+margin-top:30px;
+padding:16px 45px;
+font-size:18px;
+border:none;
+border-radius:50px;
+cursor:pointer;
+background:linear-gradient(45deg,#4f46e5,#06b6d4);
+color:white;
+transition:.4s;
+}
+
+button:hover{
+transform:translateY(-4px);
+box-shadow:0 15px 40px rgba(0,0,0,.4);
+}
+
+.card{
+width:90%;
+max-width:900px;
+margin:50px auto;
+padding:40px;
+background:rgba(255,255,255,.08);
+border-radius:25px;
+backdrop-filter:blur(15px);
+box-shadow:0 20px 50px rgba(0,0,0,.4);
+}
+
+.card h2{
+margin-bottom:20px;
+text-align:center;
+}
+
+.card h3{
+margin-top:35px;
+margin-bottom:20px;
+}
+
+input,select{
+width:100%;
+padding:15px;
+margin-bottom:20px;
+border-radius:10px;
+border:none;
+font-size:16px;
+}
+
+label{
+display:block;
+padding:12px;
+margin-bottom:10px;
+background:rgba(255,255,255,.08);
+border-radius:10px;
+cursor:pointer;
+transition:.3s;
+}
+
+label:hover{
+background:#2563eb;
+}
+
+hr{
+margin:35px 0;
+opacity:.2;
+}
+
+.thank{
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+height:90vh;
+text-align:center;
+}
+
+.thank h1{
+font-size:70px;
+margin-bottom:25px;
+}
+
+.thank p{
+font-size:22px;
+max-width:700px;
+line-height:1.8;
+}
+
+.hidden{
+display:none;
+}
+
+@keyframes fadeUp{
+
+from{
+opacity:0;
+transform:translateY(40px);
+}
+
+to{
+opacity:1;
+transform:translateY(0px);
+}
+
+}
